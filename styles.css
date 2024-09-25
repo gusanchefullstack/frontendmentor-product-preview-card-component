@@ -1,0 +1,123 @@
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--Cream);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: var(--White);
+}
+
+.container > img {
+  width: 300px;
+  height: 450px;
+}
+
+.container .text {
+  padding: 35px;
+}
+
+.text p:first-of-type {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark-grayish-blue);
+}
+
+button {
+  background-color: var(--Dark-cyan);
+  width: 100%;
+  color: var(--White);
+  border-radius: 8px;
+  height: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 32px;
+  font-family: "Fraunces", serif;
+  color: var(--Very-dark-blue);
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.text > p:last-of-type {
+  color: var(--Dark-grayish-blue);
+  line-height: 23px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.pricing >span:first-of-type {
+    color: var(--Very-dark-blue);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--Dark-cyan);
+}
+
+.pricing >span:last-of-type {
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+
+.montserrat-500 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fraunces-700 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}

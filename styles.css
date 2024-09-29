@@ -37,12 +37,60 @@ img {
   padding: 37.69px;
 }
 
+.text > p:first-of-type {
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark-grayish-blue);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text > h1 { 
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  color: var(--Very-dark-blue);
+  font-optical-sizing: 32px;
+  margin-bottom: 20px;
+}
+
+.text > p:last-of-type {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark-grayish-blue);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .pricing > span:first-of-type {
-  font-size: 32px;
+  font-size: 31px;
   line-height: 32px;
   font-weight: 700;
   font-family: "Fraunces", serif;
   color: var(--Dark-cyan);
+}
+
+.pricing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 19px;
+}
+
+.pricing > span:last-of-type {
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+
 }
 
 button {
@@ -60,10 +108,13 @@ button {
   border: none;
   border-radius: 8px;
   width: 100%;
-  margin-top: 37.69px;
+  margin-top: 30px;
 }
 
-
+button:hover {
+  cursor: pointer;
+  background-color: #1A4032;
+}
 
 @media screen and (max-width: 376px) {
   .container {
